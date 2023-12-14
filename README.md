@@ -109,13 +109,16 @@ Rows matched: 1  Changed: 1  Warnings: 0
 
 7.Increase the Chemistry score of all students by 5 points:
 
-8.Delete a student named "Bob" from the "Students" table:
-
 mysql> UPDATE students
     -> SET chemistry = chemistry + 5;
 Query OK, 7 rows affected (0,01 sec)
 Rows matched: 7  Changed: 7  Warnings: 0
 
+8.Delete a student named "Bob" from the "Students" table:
+
+mysql> DELETE FROM students
+    -> WHERE name = 'Bob';
+Query OK, 1 row affected (0,00 sec)
 
 9.Remove all students who scored below 70 in Mathematics:
 
